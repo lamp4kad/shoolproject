@@ -35,7 +35,6 @@ let links = document.querySelectorAll(".nav-item")
 let sections = Array.from(document.querySelectorAll("section"));
 sections.push(document.querySelector("footer"))
 let secTop = sections.map(item =>item.offsetTop+item.offsetHeight)
-console.log(secTop)
 function dellActive(){
   links.forEach(item => item.classList.contains("active")?item.classList.remove("active"):item)
 }
