@@ -30,19 +30,20 @@ function toggleMenu(){
 
 burger.addEventListener("click", toggleMenu)
 
-let links = document.querySelectorAll(".nav-item")
+//let links = document.querySelectorAll(".nav-item")
 
-let sections = Array.from(document.querySelectorAll("section"));
-sections.push(document.querySelector("footer"))
-let secTop = sections.map(item =>item.offsetTop+item.offsetHeight)
-function dellActive(){
-  links.forEach(item => item.classList.contains("active")?item.classList.remove("active"):item)
-}
+//let sections = Array.from(document.querySelectorAll("section"));
+//sections.push(document.querySelector("footer"))
+//let secTop = sections.map(item =>item.offsetTop+item.offsetHeight)
+//function dellActive(){
+//  links.forEach(item => item.classList.contains("active")?item.classList.remove("active"):item)
+//}
 
-window.addEventListener("scroll", function(){
-  let some = secTop.filter(item =>item-this.window.scrollY-100>0)
-  if(!links[5-some.length].classList.contains("active")){
-    dellActive()
-    links[5-some.length].classList.add("active")
-  }
-})
+//window.addEventListener("scroll", function(){
+//  let some = secTop.filter(item =>item-this.window.scrollY-100>0)
+//  console.log(links)
+//  if(!links[5-some.length].classList.contains("active")){
+//    dellActive()
+//    links[5-some.length].classList.add("active")
+//  }
+//})
