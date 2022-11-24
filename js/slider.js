@@ -48,7 +48,6 @@ function getIndex(path,moving){
     index = 42
   }
   else if(index == 0 && moving=="left" && slideFloader=="slider2"){
-    console.log(slideFloader)
 
     index = 10
   }
@@ -56,7 +55,6 @@ function getIndex(path,moving){
     index = -1
   }
   else if(index>8 && moving == "right" && slideFloader=="slider2"){
-    console.log(slideFloader)
 
     index = -1
   }
@@ -104,12 +102,12 @@ imagesContainers.forEach(images => {
       if(slidesObj.move=="left"){
         slidesObj.current.src = slidesObj.leftItem.src
         slidesObj.rightItem.src = cur
-        slidesObj.leftItem.src = `assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "left")-1}.jpg`    
+        slidesObj.leftItem.src = `assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "left")-1}.webp`    
       }
       else if(slidesObj.move=="right"){
         slidesObj.current.src = slidesObj.rightItem.src
         slidesObj.leftItem.src = cur
-        slidesObj.rightItem.src = `assets/img/main/inter//${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "right")+1}.jpg`    
+        slidesObj.rightItem.src = `assets/img/main/inter//${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "right")+1}.webp`    
       }
     },200)
   })
