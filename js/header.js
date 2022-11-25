@@ -1,27 +1,29 @@
+
+const burger = document.querySelector(".burger")
 document.querySelectorAll('a[href^="#"').forEach(link => {
 
-  link.addEventListener('click', function(e) {
-      e.preventDefault();
+  link.addEventListener('click', function (e) {
+    burger.click()
+    e.preventDefault();
 
-      let href = this.getAttribute('href').substring(1);
+    let href = this.getAttribute('href').substring(1);
 
-      const scrollTarget = document.getElementById(href);
+    const scrollTarget = document.getElementById(href);
 
-      const topOffset = document.querySelector('header').offsetHeight;
-      //const topOffset = 0; // если не нужен отступ сверху 
-      const elementPosition = scrollTarget.getBoundingClientRect().top;
-      const offsetPosition = elementPosition - topOffset;
+    const topOffset = document.querySelector('.header-container').offsetHeight;
+    //const topOffset = 0; // если не нужен отступ сверху 
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
 
-      window.scrollBy({
-          top: offsetPosition,
-          behavior: 'smooth'
-      });
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
   });
 });
 
-const burger = document.querySelector(".burger")
 
-function toggleMenu(){
+function toggleMenu() {
   burger.classList.toggle("active");
   document.querySelector(".navigation").classList.toggle("active")
   document.querySelector("header").classList.toggle("active")
