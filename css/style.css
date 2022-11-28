@@ -70,7 +70,7 @@ a {
           flex-direction: column;
   padding: 0 50px;
   margin: 0 auto;
-  background-color: #FFB928;
+  background-color: #80c9ee;
 }
 .footer-container .block, .inter .inter-container .block, .stolov .stolov-container .block, .sport .sport-container .block, .info .info-container .block, .header-container .block {
   display: -webkit-box;
@@ -173,7 +173,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #EE9D00;
+  background-color: #6abafc;
   padding: 12px 0 13px 0;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -315,7 +315,7 @@ header {
   }
 }
 body {
-  background-color: #FFC140;
+  background-color: #b5eaf9;
 }
 
 main * > :first-child {
@@ -502,11 +502,11 @@ main > :last-child {
 
 footer {
   padding: 30px 0;
-  background-color: #EE9D00;
+  background-color: #6abafc;
 }
 
 .footer-container {
-  background-color: #EE9D00;
+  background-color: #6abafc;
   overflow: hidden;
 }
 
@@ -570,7 +570,7 @@ footer {
   }
   .navigation {
     padding: 30px 100px 20px 20px;
-    background-color: #EE9D00;
+    background-color: #6abafc;
     width: 100%;
     position: absolute;
     top: 0;
@@ -656,7 +656,7 @@ footer {
             justify-content: center;
     row-gap: 10px;
   }
-  .inter .inter-container .block.two-img .img-block .img, .inter .inter-container .block.one-img .img-block .img {
+  .inter .inter-container .block.two-img .img-block img, .inter .inter-container .block.one-img .img-block img {
     width: 100%;
   }
   .contacts {
