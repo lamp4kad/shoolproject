@@ -230,6 +230,7 @@ header {
 .navigation .nav-item {
   font-family: "Roboto";
   color: #000000;
+  font-weight: bold;
   font-size: 27px;
   line-height: 35px;
   text-decoration: none;
