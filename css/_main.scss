@@ -124,6 +124,7 @@ main{
     transition: all 1s;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    transition: 0.5s;
 
     &.hide{
       animation-name: hideSlide;

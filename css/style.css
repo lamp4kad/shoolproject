@@ -439,6 +439,9 @@ main > :last-child {
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .slider .images.hide {
   -webkit-animation-name: hideSlide;
