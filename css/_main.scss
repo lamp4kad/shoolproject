@@ -10,6 +10,15 @@
   } 
 }
 
+@keyframes rotation {
+	0% {
+		transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
 body{
   background-color: $mainBodyColor;
 }
@@ -21,6 +30,54 @@ main{
 
   >:last-child{
     margin-bottom: 75px;
+  }
+}
+
+.loader-container{
+  position: fixed;
+  left: 0px; 
+  right: 0px; 
+  top: 0px; 
+  bottom: 0px; 
+  background-color: $mainBodyColor;
+  z-index: 60;
+  transition: all 0.5s;
+
+  .out-circle{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    overflow: visible;
+    .inner-circle{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 150px;
+      height: 150px;
+      background-color: $mainBodyColor;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      overflow: visible;
+
+      .loader-line{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 200px;
+        background-color: $mainBodyColor;
+        transform-origin: 50% 0%;
+        animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
   }
 }
 
