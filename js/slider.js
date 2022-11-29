@@ -55,7 +55,6 @@ function getIndex(path,moving){
     index = -1
   }
   else if(index>8 && moving == "right" && slideFloader=="slider2"){
-
     index = -1
   }
   return +index
@@ -96,18 +95,25 @@ rightBtns.forEach(rightBtn => {
 })
 
 imagesContainers.forEach(images => {
-  images.addEventListener("animationstart", function(){
+  images.addEventListener("animationstart", async function(){
     setTimeout(()=>{
-      let cur = slidesObj.current.src
+      let cur = slidesObj.current.src;
+      const img = new Image();
       if(slidesObj.move=="left"){
         slidesObj.current.src = slidesObj.leftItem.src
         slidesObj.rightItem.src = cur
-        slidesObj.leftItem.src = `assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "left")-1}.webp`    
+        img.src = `https://raw.githubusercontent.com/lamp4kad/shoolproject/master/assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "left")-1}.webp`
+        img.onload =() => {
+          slidesObj.leftItem.src = img.src   
+        }
       }
       else if(slidesObj.move=="right"){
         slidesObj.current.src = slidesObj.rightItem.src
         slidesObj.leftItem.src = cur
-        slidesObj.rightItem.src = `assets/img/main/inter//${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "right")+1}.webp`    
+        img.src = `https://raw.githubusercontent.com/lamp4kad/shoolproject/master/assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "right")+1}.webp`
+        img.onload =() => {
+          slidesObj.rightItem.src = img.src   
+        }
       }
     },200)
   })
