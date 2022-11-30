@@ -101,25 +101,25 @@ imagesContainers.forEach(images => {
       const img = new Image();
       if(slidesObj.move=="left"){
         slidesObj.current.src = slidesObj.leftItem.src
-        slidesObj.rightItem.src = cur
-        img.src = `https://raw.githubusercontent.com/lamp4kad/shoolproject/master/assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "left")-1}.webp`
+        img.src = `https://raw.githubusercontent.com/lamp4kad/shoolproject/master/assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.leftItem.src, "left")-1}.webp`
         img.onload =() => {
-          slidesObj.leftItem.src = img.src   
+          slidesObj.rightItem.src = cur
+          slidesObj.leftItem.src = img.src
+          images.classList.remove("hide")
+          isReady = true 
         }
       }
       else if(slidesObj.move=="right"){
-        slidesObj.current.src = slidesObj.rightItem.src
-        slidesObj.leftItem.src = cur
-        img.src = `https://raw.githubusercontent.com/lamp4kad/shoolproject/master/assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.current.src, "right")+1}.webp`
+        img.src = `https://raw.githubusercontent.com/lamp4kad/shoolproject/master/assets/img/main/inter/${slidesObj.slideFloader}/paint${getIndex(slidesObj.rightItem.src, "right")+1}.webp`
         img.onload =() => {
-          slidesObj.rightItem.src = img.src   
+          slidesObj.current.src = slidesObj.rightItem.src
+          slidesObj.leftItem.src = cur
+          slidesObj.rightItem.src = img.src
+          images.classList.remove("hide")
+          isReady = true
         }
       }
     },200)
-  })
-  images.addEventListener("animationend", function(){
-    images.classList.remove("hide")
-    isReady = true
   })
 })
 

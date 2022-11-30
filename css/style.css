@@ -296,11 +296,8 @@ header {
   from {
     opacity: 1;
   }
-  50% {
-    opacity: 0;
-  }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -308,11 +305,8 @@ header {
   from {
     opacity: 1;
   }
-  50% {
-    opacity: 0;
-  }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @-webkit-keyframes rotation {
@@ -510,18 +504,17 @@ main > :last-child {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  opacity: 1;
 }
 .slider .images.hide {
+  opacity: 0;
   -webkit-animation-name: hideSlide;
           animation-name: hideSlide;
 }
