@@ -1,3 +1,11 @@
+@media (max-width: 1100px) {
+  .navigation{
+    .nav-item{
+      font-size: 20px;
+    }
+  }
+}
+
 @media (max-width: $tablet) {
 
   header{
@@ -34,7 +42,7 @@
     left: 0;
     flex-direction: column;
     flex-wrap: nowrap;
-    row-gap: 15px;
+    row-gap: 5px;
     align-items: flex-start;
     font-size: 24px;
     height: 270px;
