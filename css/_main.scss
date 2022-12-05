@@ -117,6 +117,19 @@ main{
   }
 }
 
+.rooms{
+  padding-top: 50px;
+  .rooms-container{
+    @extend %container;
+
+    .img-small{
+      max-width: 589px;
+      max-height: 491px;
+      align-self: center;
+    }
+  }
+}
+
 .inter{
   padding-top: 50px;
   .inter-container{

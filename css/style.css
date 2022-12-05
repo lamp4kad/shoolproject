@@ -59,7 +59,7 @@ a {
   text-decoration: none;
 }
 
-.footer-container, .inter .inter-container, .stolov .stolov-container, .sport .sport-container, .info .info-container, .header-container {
+.footer-container, .inter .inter-container, .rooms .rooms-container, .stolov .stolov-container, .sport .sport-container, .info .info-container, .header-container {
   max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +72,7 @@ a {
   margin: 0 auto;
   background-color: #80c9ee;
 }
-.footer-container .block, .inter .inter-container .block, .stolov .stolov-container .block, .sport .sport-container .block, .info .info-container .block, .header-container .block {
+.footer-container .block, .inter .inter-container .block, .rooms .rooms-container .block, .stolov .stolov-container .block, .sport .sport-container .block, .info .info-container .block, .header-container .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,13 +85,13 @@ a {
           column-gap: 50px;
   row-gap: 15px;
 }
-.footer-container .block.two-img, .inter .inter-container .block.two-img, .stolov .stolov-container .block.two-img, .sport .sport-container .block.two-img, .info .info-container .block.two-img, .header-container .block.two-img {
+.footer-container .block.two-img, .inter .inter-container .block.two-img, .rooms .rooms-container .block.two-img, .stolov .stolov-container .block.two-img, .sport .sport-container .block.two-img, .info .info-container .block.two-img, .header-container .block.two-img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.footer-container .block.two-img .img-block, .inter .inter-container .block.two-img .img-block, .stolov .stolov-container .block.two-img .img-block, .sport .sport-container .block.two-img .img-block, .info .info-container .block.two-img .img-block, .header-container .block.two-img .img-block {
+.footer-container .block.two-img .img-block, .inter .inter-container .block.two-img .img-block, .rooms .rooms-container .block.two-img .img-block, .stolov .stolov-container .block.two-img .img-block, .sport .sport-container .block.two-img .img-block, .info .info-container .block.two-img .img-block, .header-container .block.two-img .img-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,18 +102,18 @@ a {
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
-.footer-container .block.two-img .img-block img, .inter .inter-container .block.two-img .img-block img, .stolov .stolov-container .block.two-img .img-block img, .sport .sport-container .block.two-img .img-block img, .info .info-container .block.two-img .img-block img, .header-container .block.two-img .img-block img {
+.footer-container .block.two-img .img-block img, .inter .inter-container .block.two-img .img-block img, .rooms .rooms-container .block.two-img .img-block img, .stolov .stolov-container .block.two-img .img-block img, .sport .sport-container .block.two-img .img-block img, .info .info-container .block.two-img .img-block img, .header-container .block.two-img .img-block img {
   width: 49%;
   min-width: 230px;
   border-radius: 20px;
 }
-.footer-container .block.one-img, .inter .inter-container .block.one-img, .stolov .stolov-container .block.one-img, .sport .sport-container .block.one-img, .info .info-container .block.one-img, .header-container .block.one-img {
+.footer-container .block.one-img, .inter .inter-container .block.one-img, .rooms .rooms-container .block.one-img, .stolov .stolov-container .block.one-img, .sport .sport-container .block.one-img, .info .info-container .block.one-img, .header-container .block.one-img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.footer-container .block.one-img .img-block, .inter .inter-container .block.one-img .img-block, .stolov .stolov-container .block.one-img .img-block, .sport .sport-container .block.one-img .img-block, .info .info-container .block.one-img .img-block, .header-container .block.one-img .img-block {
+.footer-container .block.one-img .img-block, .inter .inter-container .block.one-img .img-block, .rooms .rooms-container .block.one-img .img-block, .stolov .stolov-container .block.one-img .img-block, .sport .sport-container .block.one-img .img-block, .info .info-container .block.one-img .img-block, .header-container .block.one-img .img-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,18 +124,18 @@ a {
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
-.footer-container .block.one-img .img-block img, .inter .inter-container .block.one-img .img-block img, .stolov .stolov-container .block.one-img .img-block img, .sport .sport-container .block.one-img .img-block img, .info .info-container .block.one-img .img-block img, .header-container .block.one-img .img-block img {
+.footer-container .block.one-img .img-block img, .inter .inter-container .block.one-img .img-block img, .rooms .rooms-container .block.one-img .img-block img, .stolov .stolov-container .block.one-img .img-block img, .sport .sport-container .block.one-img .img-block img, .info .info-container .block.one-img .img-block img, .header-container .block.one-img .img-block img {
   width: 49%;
   min-width: 230px;
   border-radius: 20px;
 }
-.footer-container .block .text, .inter .inter-container .block .text, .stolov .stolov-container .block .text, .sport .sport-container .block .text, .info .info-container .block .text, .header-container .block .text {
+.footer-container .block .text, .inter .inter-container .block .text, .rooms .rooms-container .block .text, .stolov .stolov-container .block .text, .sport .sport-container .block .text, .info .info-container .block .text, .header-container .block .text {
   font-family: "Roboto";
   font-size: 25px;
   line-height: 35px;
   overflow: hidden;
 }
-.footer-container .block .text-block, .inter .inter-container .block .text-block, .stolov .stolov-container .block .text-block, .sport .sport-container .block .text-block, .info .info-container .block .text-block, .header-container .block .text-block {
+.footer-container .block .text-block, .inter .inter-container .block .text-block, .rooms .rooms-container .block .text-block, .stolov .stolov-container .block .text-block, .sport .sport-container .block .text-block, .info .info-container .block .text-block, .header-container .block .text-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,20 +145,20 @@ a {
           flex-direction: column;
   row-gap: 20px;
 }
-.footer-container .block [class*=img-small], .inter .inter-container .block [class*=img-small], .stolov .stolov-container .block [class*=img-small], .sport .sport-container .block [class*=img-small], .info .info-container .block [class*=img-small], .header-container .block [class*=img-small] {
+.footer-container .block [class*=img-small], .inter .inter-container .block [class*=img-small], .rooms .rooms-container .block [class*=img-small], .stolov .stolov-container .block [class*=img-small], .sport .sport-container .block [class*=img-small], .info .info-container .block [class*=img-small], .header-container .block [class*=img-small] {
   max-width: 100%;
   background-position: center;
   border-radius: 10px;
 }
-.footer-container .block [class*=img-small].right, .inter .inter-container .block [class*=img-small].right, .stolov .stolov-container .block [class*=img-small].right, .sport .sport-container .block [class*=img-small].right, .info .info-container .block [class*=img-small].right, .header-container .block [class*=img-small].right {
+.footer-container .block [class*=img-small].right, .inter .inter-container .block [class*=img-small].right, .rooms .rooms-container .block [class*=img-small].right, .stolov .stolov-container .block [class*=img-small].right, .sport .sport-container .block [class*=img-small].right, .info .info-container .block [class*=img-small].right, .header-container .block [class*=img-small].right {
   float: right;
   margin: 0 0 10px 10px;
 }
-.footer-container .block [class*=img-small].left, .inter .inter-container .block [class*=img-small].left, .stolov .stolov-container .block [class*=img-small].left, .sport .sport-container .block [class*=img-small].left, .info .info-container .block [class*=img-small].left, .header-container .block [class*=img-small].left {
+.footer-container .block [class*=img-small].left, .inter .inter-container .block [class*=img-small].left, .rooms .rooms-container .block [class*=img-small].left, .stolov .stolov-container .block [class*=img-small].left, .sport .sport-container .block [class*=img-small].left, .info .info-container .block [class*=img-small].left, .header-container .block [class*=img-small].left {
   float: left;
   margin: 0 10px 0 10px;
 }
-.footer-container .block [class*=img-large], .inter .inter-container .block [class*=img-large], .stolov .stolov-container .block [class*=img-large], .sport .sport-container .block [class*=img-large], .info .info-container .block [class*=img-large], .header-container .block [class*=img-large] {
+.footer-container .block [class*=img-large], .inter .inter-container .block [class*=img-large], .rooms .rooms-container .block [class*=img-large], .stolov .stolov-container .block [class*=img-large], .sport .sport-container .block [class*=img-large], .info .info-container .block [class*=img-large], .header-container .block [class*=img-large] {
   max-width: 589px;
   max-height: 491px;
 }
@@ -430,6 +430,16 @@ main > :last-child {
       align-self: center;
 }
 
+.rooms {
+  padding-top: 50px;
+}
+.rooms .rooms-container .img-small {
+  max-width: 589px;
+  max-height: 491px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .inter {
   padding-top: 50px;
 }
@@ -625,7 +635,7 @@ footer {
   header.active {
     padding-bottom: 200px;
   }
-  .header-container, .info .info-container, .sport .sport-container, .stolov .stolov-container, .inter .inter-container, .footer-container {
+  .header-container, .info .info-container, .sport .sport-container, .stolov .stolov-container, .rooms .rooms-container, .inter .inter-container, .footer-container {
     padding: 0 20px;
   }
   .header-container {
